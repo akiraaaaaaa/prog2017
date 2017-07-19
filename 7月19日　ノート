@@ -1,0 +1,119 @@
+import turtle
+t= turtle.Turtle()
+
+t.home()
+t.clear()
+
+
+def rect(x, y, a):
+  t.up()
+  t.home()
+  t.forward(x)
+  t.left(90)
+  t.forward(y)
+  t.down()
+  for i in range(4):
+    t.forward(a)
+    t.left(-90)
+#空行
+
+t.clear()
+rect(10, 10, 100)
+rect(10, -110, 100)
+rect(-110, 10, 100)
+rect(-110, -110, 100)
+
+
+import  random
+random.randint(1,6)
+
+168
+class Dice:
+aDice.face_num = 6
+def shoot(self):
+  return random.randint(1, self.face_num)
+#空行
+
+import random
+aDice = Dice() #クラス(設計図)をもとにオブジェクトを作る
+aDice.shoot()  #オブジェクトを使う
+
+aDice.face_num=10
+
+
+169
+class Dice:
+def __init__(self, val):
+self.face_num = val
+def shoot(self):
+return random.randint(1, self.face_num)
+#空行
+
+import random
+
+
+170
+クラス図
+一番上がクラス名
+二番目にうえが性質(アトリビュート)
+三番目が機能(メソッド)
+
+
+171
+class
+
+172
+self
+
+173
+init
+
+
+言葉の説明
+オブジェクト指向プログラミング
+・クラスの概念
+・クラス派生　　　クラスをもとにして別のクラスを作る
+
+この二つを合わせてプログラミングすることがオブジェクト指向プログラミング
+
+
+10彰　オプショナル
+
+178
+こぴぺ
+
+179
+pythonってうつだけ
+
+180　必要なし
+
+181　CUI　　キャラクターユーザーインターフェース　　対立が　GUI　グラフィカルインターフェース
+
+
+コマンドプロンプトで　cd/cit
+dirと打つと
+どっとが一つは今いる場所
+どっと二つはそのうえ
+
+
+184
+python num.py > result.txt
+136参照
+
+ファイルの読み込み
+
+import sts
+
+for line in sys.stdin:
+  print(line)
+  
+
+ファイルを読み込んでそのデータの合計値を求める
+
+import sys
+
+sum = 0
+for line in sys.stdin:
+  sum += int(line.strip())
+
+print(sum)
